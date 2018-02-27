@@ -1,0 +1,61 @@
+@charset UTF-8;
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+font-family: 'NanumSquare', sans-serif;
+
+/* css reset*/
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* design area */
+body {
+    font-size: 14px;
+    color: rgba(0,0,0,0.87);
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAD7C0;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+/*    transform: translateY(-50%);*/
+    left: 50%;
+    transform: translateX(-50%);
+    width: 557px;
+}
+.name {
+    float: left;
+    font-size: 5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #333;
+    display: none;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-2%); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(2%); }
+    100% { transform: translateY(0); }
+}
+
+.name.ani {
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
